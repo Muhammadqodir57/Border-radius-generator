@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Radius Generator</title>
+    <style>
+        #box {
+            width: 200px;
+            height: 200px;
+            background-color: #ccc;
+            margin: 20px;
+            border: 2px solid #333;
+            transition: border-radius 0.3s ease;
+        }
+
+        #controls {
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+        }
+
+        input[type="range"] {
+            width: 200px;
+            margin-bottom: 10px;
+        }
+
+        input[type="number"] {
+            width: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box"></div>
+    <div id="controls">
+        <h3 for="tl">Top Left:</h3>
+        <input type="range" id="tl" value="0">
+
+        <h3 for="tr">Top Right:</h3>
+        <input type="range" id="tr" value="0">
+
+        <h3 for="bl">Bottom Left:</h3>
+        <input type="range" id="bl" value="0">
+
+        <h3 for="br">Bottom Right:</h3>
+        <input type="range" id="br" value="0">
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
